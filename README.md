@@ -59,7 +59,7 @@ jobs:
   deploy:
     uses: AlphaZx-CJY/blog-workflow/.github/workflows/publish-blog.yml@main
     secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 ### 3. 开启 GitHub Pages
@@ -160,7 +160,7 @@ jobs:
       config-path: 'blog.config.yml'  # 配置文件路径
       blog-generator-version: 'main'  # blog-generator 版本
     secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 ### 参数说明

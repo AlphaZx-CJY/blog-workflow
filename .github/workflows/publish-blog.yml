@@ -24,7 +24,7 @@ on:
         type: string
         default: 'main'
     secrets:
-      GITHUB_TOKEN:
+      GH_TOKEN:
         description: 'GitHub token for deployment'
         required: true
 
