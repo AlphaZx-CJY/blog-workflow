@@ -57,7 +57,7 @@ concurrency:
 
 jobs:
   deploy:
-    uses: AlphaZx/blog-workflow/.github/workflows/publish-blog.yml@main
+    uses: AlphaZx-CJY/blog-workflow/.github/workflows/publish-blog.yml@main
     secrets:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -153,7 +153,7 @@ comments:
 ```yaml
 jobs:
   deploy:
-    uses: AlphaZx/blog-workflow/.github/workflows/publish-blog.yml@main
+    uses: AlphaZx-CJY/blog-workflow/.github/workflows/publish-blog.yml@main
     with:
       node-version: '20'              # Node.js 版本
       posts-path: 'posts'             # Markdown 文件目录
