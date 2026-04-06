@@ -69,6 +69,9 @@ jobs:
           # Create posts directory
           mkdir -p blog-generator/content/posts
           
+          # Remove sample posts from blog-generator (keep only user's posts)
+          rm -f blog-generator/content/posts/*.md
+          
           # Find and copy all .md files from user repository
           POSTS_PATH="user-content/${{ inputs.posts-path }}"
           
